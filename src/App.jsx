@@ -61,6 +61,7 @@ const App = () => {
         <Route path="/order" element={<PlaceOrder />} />
       </Routes>
 
+
       {/* Footer */}
       <Footer />
     </div>
