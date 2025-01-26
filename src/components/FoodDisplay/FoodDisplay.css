@@ -1,0 +1,67 @@
+.food-display {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.food-display h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.food-item-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  width: 100%; /* Ensure the card fills the available width */
+  max-width: 250px; /* Max width for card consistency */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 380px; /* Consistent card height */
+}
+
+.food-item-card:hover {
+  transform: translateY(-8px); /* Hover effect for interaction */
+}
+
+.food-item-card img {
+  width: 100%; /* Make image width responsive */
+  height: 180px; /* Set fixed image height */
+  object-fit: cover; /* Ensure image is covered within the space */
+  border-radius: 8px;
+}
+
+.food-item-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 12px;
+}
+
+.food-item-card p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.food-item-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #27ae60; /* Green color for price */
+  margin-top: 12px;
+}

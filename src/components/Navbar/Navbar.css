@@ -1,0 +1,270 @@
+/* Navbar container styling */
+.navbar {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+
+}
+
+.navbar .logo {
+  width: 150px;
+}
+
+/* Navbar menu */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  color: #49557e;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #49557e;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover,
+.navbar-menu .active {
+  color: #ff7a59;
+  border-bottom: 2px solid #ff7a59;
+}
+
+/* Navbar right section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid #ff7a59;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #fff4f2;
+}
+
+/* Basket icon with notification dot */
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  border-radius: 50%;
+  top: -8px;
+  right: -8px;
+}
+
+/* Search form styling */
+.search-form {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.search-form input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 8px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.search-form input::placeholder {
+  color: #aaa;
+}
+
+.search-form button {
+  border: none;
+  background-color: #ff7a59;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+  background-color: #e66a4f;
+}
+
+/* Search results dropdown styling */
+.search-results {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.search-result-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #f2f2f2;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-result-item:hover {
+  background-color: #f9f9f9;
+}
+
+.search-result-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Loading and error messages */
+.navbar-right p {
+  font-size: 14px;
+  color: #ff4d4d;
+  margin-left: 15px;
+}
+
+/* Responsive Design */
+
+/* Tablet devices */
+@media (max-width: 1050px) {
+  .navbar .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+  }
+
+  .navbar-right img {
+    width: 22px;
+  }
+
+  .navbar button {
+    padding: 8px 25px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 900px) {
+  .navbar .logo {
+    width: 130px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .navbar-right {
+    gap: 15px;
+  }
+
+  .navbar-right img {
+    width: 20px;
+  }
+
+  .navbar button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+
+/* Hide navbar menu on smaller screens */
+@media (max-width: 750px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+
+.navbar-notifications {
+  position: relative;
+  margin-right: 20px;
+}
+
+.notifications-dropdown {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item h4 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.notification-item p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.notification-item span {
+  font-size: 12px;
+  color: #999;
+}
+@media (max-width: 750px) {
+  .navbar-menu {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .navbar-menu.show {
+    display: block;
+    opacity: 1;
+  }
+}
