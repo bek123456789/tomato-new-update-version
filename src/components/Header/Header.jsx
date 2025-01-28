@@ -20,13 +20,13 @@ const Header = () => {
     <div className="header">
       <Slider {...settings} className="header-carousel">
         <div>
-          <img src="./public/assets/first_slider.png" alt="Dish 1" className="carousel-image" />
+          <img src="./assets/first_slider.png" alt="Dish 1" className="carousel-image" />
         </div>
         <div>
-          <img src="./public/assets/second_slider.png" alt="Dish 2" className="carousel-image" />
+          <img src="./assets/second_slider.png" alt="Dish 2" className="carousel-image" />
         </div>
         <div>
-          <img src="./public/assets/third_slider.png" alt="Dish 3" className="carousel-image" />
+          <img src="./assets/third_slider.png" alt="Dish 3" className="carousel-image" />
         </div>
       </Slider>
     </div>

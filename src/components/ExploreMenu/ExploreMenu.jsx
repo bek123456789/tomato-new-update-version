@@ -3,35 +3,35 @@ import "./ExploreMenu.css";
 export const menu_list = [
   {
     menu_name: "Salad",
-    menu_image: "./public/assets/menu_1.png",
+    menu_image: "./assets/menu_1.png",
   },
   {
     menu_name: "Rolls",
-    menu_image: "./public/assets/menu_2.png",
+    menu_image: "./assets/menu_2.png",
   },
   {
     menu_name: "Deserts",
-    menu_image: "./public/assets/menu_3.png",
+    menu_image: "./assets/menu_3.png",
   },
   {
     menu_name: "Sandwich",
-    menu_image: "./public/assets/menu_4.png",
+    menu_image: "./assets/menu_4.png",
   },
   {
     menu_name: "Cake",
-    menu_image: "./public/assets/menu_5.png",
+    menu_image: "./assets/menu_5.png",
   },
   {
     menu_name: "Pure Veg",
-    menu_image: "./public/assets/menu_6.png",
+    menu_image: "./assets/menu_6.png",
   },
   {
     menu_name: "Pasta",
-    menu_image: "./public/assets/menu_7.png",
+    menu_image: "./assets/menu_7.png",
   },
   {
     menu_name: "Noodles",
-    menu_image: "./public/assets/menu_8.png",
+    menu_image: "./assets/menu_8.png",
   },
 ];
 

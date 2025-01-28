@@ -21,15 +21,15 @@ You can find the video [here](https://vimeo.com/manage/videos/951348496).
 
 ## Screenshots
 
-![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./public/assets/examples/food-delivery-example-1.png?token=GHSAT0AAAAAACPHGDOCSWAVZV7OF244A3HUZSWRYXQ)
-![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./public/assets/examples/food-delivery-example-2.png?token=GHSAT0AAAAAACPHGDODOPUYOVVQU7OT4DEGZSWRY5A)
-![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./public/assets/examples/food-delivery-example-3.png?token=GHSAT0AAAAAACPHGDOCPMVLHBLWQYCYL4AIZSWRZDQ)
-![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./public/assets/examples/food-delivery-example-4.png?token=GHSAT0AAAAAACPHGDODU6OW3PM4JOQRLIBOZSWRZIA)
-![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./public/assets/examples/food-delivery-example-5.png?token=GHSAT0AAAAAACPHGDODEXY4Y3QEQO5FK3SSZSWRZOA)
+![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./assets/examples/food-delivery-example-1.png?token=GHSAT0AAAAAACPHGDOCSWAVZV7OF244A3HUZSWRYXQ)
+![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./assets/examples/food-delivery-example-2.png?token=GHSAT0AAAAAACPHGDODOPUYOVVQU7OT4DEGZSWRY5A)
+![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./assets/examples/food-delivery-example-3.png?token=GHSAT0AAAAAACPHGDOCPMVLHBLWQYCYL4AIZSWRZDQ)
+![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./assets/examples/food-delivery-example-4.png?token=GHSAT0AAAAAACPHGDODU6OW3PM4JOQRLIBOZSWRZIA)
+![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./assets/examples/food-delivery-example-5.png?token=GHSAT0AAAAAACPHGDODEXY4Y3QEQO5FK3SSZSWRZOA)
 
 ## Mobile Size Screen
 
-![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./public/assets/examples/food-delivery-example-6.png?token=GHSAT0AAAAAACPHGDODQAVUEO5GZIYSQPMQZSWRZYQ)
+![Food deivery app example](https://raw.githubusercontent.com/olyanya/react-food-delivery-website/main/src./assets/examples/food-delivery-example-6.png?token=GHSAT0AAAAAACPHGDODQAVUEO5GZIYSQPMQZSWRZYQ)
 
 ## License
 

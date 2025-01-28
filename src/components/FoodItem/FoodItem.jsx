@@ -41,20 +41,20 @@ const FoodItem = ({ id }) => {
           <img
             className="add"
             onClick={() => addToCart(foodData._id)}
-            src="./public/assets/add_icon_white.png"
+            src="./assets/add_icon_white.png"
             alt="add icon"
           />
         ) : (
           <div className="food-item-counter">
             <img
               onClick={() => removeFromCart(foodData._id)}
-              src="./public/assets/remove_icon_red.png" // Corrected icon path
+              src="./assets/remove_icon_red.png" // Corrected icon path
               alt="remove icon"
             />
             <p>{cartItems[foodData._id]}</p>
             <img
               onClick={() => addToCart(foodData._id)}
-              src="./public/assets/add_icon_green.png" // Corrected icon path
+              src="./assets/add_icon_green.png" // Corrected icon path
               alt="add icon"
             />
           </div>
@@ -63,7 +63,7 @@ const FoodItem = ({ id }) => {
       <div className="food-item-info">
         <div className="food-item-name-rating">
           <p>{foodData.name}</p>
-          <img src="./public/assets/rating_starts.png" alt="rating" /> {/* Corrected icon path */}
+          <img src="./assets/rating_starts.png" alt="rating" /> {/* Corrected icon path */}
         </div>
         <p className="food-item-description">{foodData.description}</p>
         <p className="food-item-price">${foodData.price}</p>

@@ -65,7 +65,7 @@ const Navbar = ({ setShowLogin, setIsAuthenticated, setUserData }) => {
   return (
     <div className="navbar">
       <Link to="/">
-        <img className="logo" src="./public/assets/logo.png" alt="logo" />
+        <img className="logo" src="../assets/logo.png" alt="logo" />
       </Link>
       <ul className="navbar-menu">
         <Link to="/" onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>
@@ -84,12 +84,12 @@ const Navbar = ({ setShowLogin, setIsAuthenticated, setUserData }) => {
       <div className="navbar-right">
         <div className="navbar-search-icon">
           <Link to="/cart">
-            <img src="./public/assets/korzina.png" style={{ width: "20px", height: "20px" }} alt="cart" />
+            <img src="./assets/korzina.png" style={{ width: "20px", height: "20px" }} alt="cart" />
           </Link>
           <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
         </div>
         <div className="navbar-notifications" onClick={() => setShowNotifications((prev) => !prev)}>
-          <img src="./public/assets/not.png" alt="notifications" style={{ width: "24px", cursor: "pointer" }} />
+          <img src="./assets/not.png" alt="notifications" style={{ width: "24px", cursor: "pointer" }} />
           {notifications.length > 0 && <div className="dot"></div>}
         </div>
         {showNotifications && (
@@ -119,7 +119,7 @@ const Navbar = ({ setShowLogin, setIsAuthenticated, setUserData }) => {
         {isAuthenticatedState ? (
           <div className="profile">
             <img
-              src={userDataState?.profilePicture || "./public/assets/default-avatar.png"}
+              src={userDataState?.profilePicture || "./assets/default-avatar.png"}
               alt="Profile"
               style={{ width: "30px", height: "30px", borderRadius: "50%" }}
             />
