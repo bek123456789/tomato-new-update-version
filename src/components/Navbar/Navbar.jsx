@@ -65,7 +65,7 @@ const Navbar = ({ setShowLogin, setIsAuthenticated, setUserData }) => {
   return (
     <div className="navbar">
       <Link to="/">
-        <img className="logo" src="../assets/logo.png" alt="logo" />
+        <img className="logo" src="./assets/logo.png" alt="logo" />
       </Link>
       <ul className="navbar-menu">
         <Link to="/" onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>
