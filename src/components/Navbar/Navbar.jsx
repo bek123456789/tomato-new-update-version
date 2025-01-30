@@ -64,7 +64,7 @@ const Navbar = ({ setShowLogin, setIsAuthenticated, setUserData }) => {
 
   return (
     <div className="navbar">
-      <Link to="/react-food-delivery-website/">
+      <Link to="/">
         <img className="logo" src="./assets/logo.png" alt="logo" />
       </Link>
       <ul className="navbar-menu">

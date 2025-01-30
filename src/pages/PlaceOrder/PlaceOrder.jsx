@@ -147,7 +147,7 @@ const PlaceOrder = () => {
         throw new Error("Failed to process payment.");
       }
 
-      navigate("/react-food-delivery-website/"); // Navigate to the home page after successful order
+      navigate("/");
 
     } catch (error) {
       console.error("An error occurred:", error);

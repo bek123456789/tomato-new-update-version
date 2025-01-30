@@ -56,7 +56,7 @@ const App = () => {
 
       {/* Routes */}
       <Routes>
-        <Route path="/react-food-delivery-website" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<PlaceOrder />} />
       </Routes>
