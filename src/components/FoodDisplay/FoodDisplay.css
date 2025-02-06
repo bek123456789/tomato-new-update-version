@@ -1,67 +1,77 @@
 .food-display {
   margin-top: 30px;
   padding: 20px;
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f9fafb; /* Lighter background */
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Softer shadow */
 }
 
 .food-display h2 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 700;
   text-align: center;
-  color: #333;
-  margin-bottom: 20px;
+  color: #2d3436; /* Darker text */
+  margin-bottom: 30px;
+  text-transform: capitalize; /* Capitalize the title */
 }
 
 .food-display-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Slightly wider columns */
+  gap: 24px; /* Bigger gap between items */
 }
 
 .food-item-card {
   background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 16px;
+  border-radius: 16px; /* More rounded corners for the cards */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  padding: 18px;
   text-align: center;
-  transition: transform 0.2s ease-in-out;
-  width: 100%; /* Ensure the card fills the available width */
-  max-width: 250px; /* Max width for card consistency */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for shadow */
+  width: 100%;
+  max-width: 270px; /* Slightly bigger max width */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 380px; /* Consistent card height */
+  min-height: 400px; /* Slightly taller card */
 }
 
 .food-item-card:hover {
-  transform: translateY(-8px); /* Hover effect for interaction */
+  transform: translateY(-10px); /* Slightly stronger hover effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
 .food-item-card img {
-  width: 100%; /* Make image width responsive */
-  height: 180px; /* Set fixed image height */
-  object-fit: cover; /* Ensure image is covered within the space */
-  border-radius: 8px;
+  width: 100%;
+  height: 200px; /* Taller image */
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.food-item-card img:hover {
+  transform: scale(1.05); /* Subtle zoom on hover */
 }
 
 .food-item-card h3 {
-  font-size: 18px;
-  color: #333;
-  margin-top: 12px;
+  font-size: 20px;
+  color: #2c3e50; /* Darker color for heading */
+  margin-top: 16px;
+  font-weight: 600;
 }
 
 .food-item-card p {
-  font-size: 14px;
-  color: #666;
-  margin-top: 8px;
+  font-size: 15px;
+  color: #7f8c8d; /* Slightly muted color for description */
+  margin-top: 10px;
+  line-height: 1.5; /* Improve readability */
 }
 
 .food-item-card .price {
-  font-size: 16px;
-  font-weight: bold;
-  color: #27ae60; /* Green color for price */
-  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #27ae60; /* Bright green for price */
+  margin-top: 20px;
+  text-transform: uppercase; /* Price in uppercase */
 }

@@ -4,11 +4,11 @@ const AppDownload = () => {
   return (
     <div className="app-download" id="app-download">
       <p>
-        For better experience download <br /> Tomato app
+        Yaxshi tajriba uchun <br /> Evos ilovasini yuklab oling
       </p>
       <div className="app-download-platforms">
-        <img src="./assets/play_store.png" alt="play store" />
-        <img src="./assets/app_store.png" alt="app store" />
+        <img src="./assets/play_store.png" alt="Play Market" />
+        <img src="./assets/app_store.png" alt="App Store" />
       </div>
     </div>
   );

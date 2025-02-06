@@ -5,30 +5,27 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src="./assets/logo.png" alt="logo" />
+          <img src="https://marketing.uz/uploads/articles/5437/article-original.png" width="200px" alt="logo" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            volupb tate, ut dolorum libero, cumque asperiores beatae, numquam sunt
-            quisquam ipsam saepe porro possimus id at dolorem ad odit! Cumque,
-            cupiditate.
+            Evos bilan hayotingizni osonlashtiring! Sifatli va mazali taomlarni tez yetkazib beramiz.
           </p>
           <div className="footer-social-icons">
-            <img src="./assets/facebook_icon.png" alt="facebook icon" />
-            <img src="./assets/twitter_icon.png" alt="twitter icon" />
-            <img src="./assets/linkedin_icon.png" alt="linkedin icon" />
+            <img src="./assets/facebook_icon.png" alt="Facebook ikonkasi" />
+            <img src="./assets/twitter_icon.png" alt="Twitter ikonkasi" />
+            <img src="./assets/linkedin_icon.png" alt="LinkedIn ikonkasi" />
           </div>
         </div>
         <div className="footer-content-center">
-          <h2>COMPANY</h2>
+          <h2>KOMPANIYA</h2>
           <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Delivery</li>
-            <li>Private policy</li>
+            <li>Bosh sahifa</li>
+            <li>Biz haqimizda</li>
+            <li>Yetkazib berish</li>
+            <li>Maxfiylik siyosati</li>
           </ul>
         </div>
         <div className="footer-content-right">
-          <h2>GET IN TOUCH</h2>
+          <h2>ALOQA</h2>
           <ul>
             <li>+998-95-80-91</li>
             <li>bekzodboxodirovc@gmail.com</li>
@@ -37,7 +34,7 @@ const Footer = () => {
       </div>
       <hr />
       <p className="footer-copyright">
-        Copyright 2024 © Tomato.com - All Right Reserved
+        Copyright 2024 © Evos.uz - Barcha huquqlar himoyalangan
       </p>
     </div>
   );

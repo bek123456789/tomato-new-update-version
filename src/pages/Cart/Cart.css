@@ -103,10 +103,12 @@
   .cart-bottom {
     flex-direction: column-reverse;
   }
+
   .cart-promocode {
     justify-content: start;
   }
 }
+
 .modal {
   position: fixed;
   top: 0;
@@ -144,4 +146,52 @@
 
 .modal-content button:hover {
   background-color: #45a049;
+}
+
+.place-order {
+  display: flex;
+  align-items: flex-start;
+  /* Align to the start instead of "start" which is non-standard */
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 100px;
+  padding: 0 20px;
+  /* Add padding to the sides */
+}
+
+.place-order-left {
+  width: 100%;
+  max-width: max(30%, 500px);
+}
+
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.place-order-left input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  outline-color: tomato;
+  font-size: 15px;
+}
+
+.place-order-left .multi-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.place-order-right {
+  width: 100%;
+  max-width: max(40%, 500px);
+}
+
+.place-order .cart-total button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  /* Added padding for a better button layout */
 }
