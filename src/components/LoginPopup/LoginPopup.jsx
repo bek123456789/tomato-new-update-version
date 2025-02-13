@@ -11,7 +11,7 @@ const LoginPopup = ({ onClose, setIsAuthenticated, setUserData }) => {
   const [otpInput, setOtpInput] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRfcGxhdGZvcm1faWQiOiIiLCJjbGllbnRfdHlwZV9pZCI6ImYzODMyMzdiLTJmM2YtNDkyMC1iMDcwLWM4M2E4ZjM3YTZlNyIsImRhdGEiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTMxLjAuMC4wIFNhZmFyaS81MzcuMzYiLCJleHAiOjE3MzkxNjM4MTQsImlhdCI6MTczOTA3NzQxNCwiaWQiOiJhOThkZTMwMy00OTNmLTQ0MjYtOGU0OC0yY2E2YzA1ZjRlMzAiLCJpcCI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMzEuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImxvZ2luX3RhYmxlX3NsdWciOiJ1c2VyIiwicHJvamVjdF9pZCI6IjMwOWE5YzNhLThjYmUtNDc2NC1hNjFmLWNjOTY5OTc0NmI0NCIsInJvbGVfaWQiOiJlZTczMDI1NC1hNmJhLTQzMzAtYWFhNC05MjAxNTQxZjk5MWYiLCJ0YWJsZXMiOm51bGwsInVzZXJfaWQiOiIwNGFhNzFlYy1iNTNjLTQ4ODItOWFlZS04MDcwMTNkODBmMjYiLCJ1c2VyX2lkX2F1dGgiOiIwNGFhNzFlYy1iNTNjLTQ4ODItOWFlZS04MDcwMTNkODBmMjYifQ.nJdONRlAM6xUbJL1EE_RD6hIkdnyYuPtgOCGCoXQZFc";
+  const BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRfcGxhdGZvcm1faWQiOiIiLCJjbGllbnRfdHlwZV9pZCI6ImYzODMyMzdiLTJmM2YtNDkyMC1iMDcwLWM4M2E4ZjM3YTZlNyIsImRhdGEiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTMxLjAuMC4wIFNhZmFyaS81MzcuMzYiLCJleHAiOjE3Mzk0Njk1MjksImlhdCI6MTczOTM4MzEyOSwiaWQiOiJhOThkZTMwMy00OTNmLTQ0MjYtOGU0OC0yY2E2YzA1ZjRlMzAiLCJpcCI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMzEuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImxvZ2luX3RhYmxlX3NsdWciOiJ1c2VyIiwicHJvamVjdF9pZCI6IjMwOWE5YzNhLThjYmUtNDc2NC1hNjFmLWNjOTY5OTc0NmI0NCIsInJvbGVfaWQiOiJlZTczMDI1NC1hNmJhLTQzMzAtYWFhNC05MjAxNTQxZjk5MWYiLCJ0YWJsZXMiOm51bGwsInVzZXJfaWQiOiIwNGFhNzFlYy1iNTNjLTQ4ODItOWFlZS04MDcwMTNkODBmMjYiLCJ1c2VyX2lkX2F1dGgiOiIwNGFhNzFlYy1iNTNjLTQ4ODItOWFlZS04MDcwMTNkODBmMjYifQ.3ZzUuoRSsUYQdz9b0zph_jaQMKscf5lpKaDSkfMh7r4";
   const ENVIRONMENT_ID = "b3e95ba5-ac02-4e47-94dc-e94dc9500fe2";
   const RESOURCE_ID = "eed1c120-7df1-4786-9fde-3a904ea91957";
   const PROJECT_ID = "309a9c3a-8cbe-4764-a61f-cc9699746b44";
@@ -181,6 +181,37 @@ const LoginPopup = ({ onClose, setIsAuthenticated, setUserData }) => {
 
         {step === 1 && (
           <div>
+            <input
+              type="text"
+              placeholder="First Name"
+
+              style={{
+                width: "100%",
+                padding: "12px 15px",
+                marginBottom: "15px",
+                borderRadius: "8px",
+                border: "1px solid #ddd",
+                fontSize: "16px",
+                outline: "none",
+                boxSizing: "border-box",
+              }}
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+
+
+              style={{
+                width: "100%",
+                padding: "12px 15px",
+                marginBottom: "15px",
+                borderRadius: "8px",
+                border: "1px solid #ddd",
+                fontSize: "16px",
+                outline: "none",
+                boxSizing: "border-box",
+              }}
+            />
             <input
               type="text"
               placeholder="Enter your phone number"
