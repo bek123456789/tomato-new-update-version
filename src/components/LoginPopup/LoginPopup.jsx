@@ -4,6 +4,8 @@ import "./LoginPopup.css";
 
 const LoginPopup = ({ onClose, setIsAuthenticated, setUserData }) => {
   const [phone, setPhone] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [step, setStep] = useState(1);
   const [mode, setMode] = useState("login");
   const [error, setError] = useState("");
@@ -97,12 +99,14 @@ const LoginPopup = ({ onClose, setIsAuthenticated, setUserData }) => {
       if (response.data.status === "SUCCESS" || response.data.status === "CREATED") {
         alert("Verification successful! You are logged in.");
 
-
         setIsAuthenticated(true);
         setUserData({
           phone,
-          name: "User Name",
+          firstName,
+          lastName,
         });
+        localStorage.setItem("firstName", firstName);
+        localStorage.setItem("lastName", lastName);
         handleCloseModal();
       } else {
         setError("Verification failed. Please try again.");
@@ -115,6 +119,8 @@ const LoginPopup = ({ onClose, setIsAuthenticated, setUserData }) => {
 
   const handleCloseModal = () => {
     setPhone("");
+    setFirstName("");
+    setLastName("");
     setStep(1);
     setMode("login");
     setError("");
@@ -184,7 +190,8 @@ const LoginPopup = ({ onClose, setIsAuthenticated, setUserData }) => {
             <input
               type="text"
               placeholder="First Name"
-
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
               style={{
                 width: "100%",
                 padding: "12px 15px",
@@ -199,8 +206,8 @@ const LoginPopup = ({ onClose, setIsAuthenticated, setUserData }) => {
             <input
               type="text"
               placeholder="Last Name"
-
-
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
               style={{
                 width: "100%",
                 padding: "12px 15px",

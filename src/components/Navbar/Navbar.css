@@ -1,6 +1,6 @@
 /* Navbar container styling */
 .navbar {
-  padding: 20px 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,13 +86,13 @@
   border-radius: 50%;
 }
 
-/* Order History icon with animation */
-.navbar-order-history {
+/* Order History icon with dot */
+.navbar-orders {
   position: relative;
   margin-right: 20px;
 }
 
-.navbar-order-history .dot {
+.navbar-orders .dot {
   position: absolute;
   top: -5px;
   right: -5px;
@@ -102,8 +102,8 @@
   border-radius: 50%;
 }
 
-.notifications-dropdown,
-.order-history-dropdown {
+/* Notifications dropdown */
+.notifications-dropdown {
   position: absolute;
   right: 20px;
   top: 50px;
@@ -120,42 +120,59 @@
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.notifications-dropdown.show,
-.order-history-dropdown.show {
+.notifications-dropdown.show {
   opacity: 1;
   visibility: visible;
 }
 
-.notification-item,
-.order-history-item {
+.notification-item {
   display: flex;
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #f0f0f0;
 }
 
-.notification-item:last-child,
-.order-history-item:last-child {
+.notification-item:last-child {
   border-bottom: none;
 }
 
-.notification-item h4,
-.order-history-item h4 {
+.notification-item h4 {
   margin: 0 0 5px 0;
   font-size: 16px;
 }
 
-.notification-item p,
-.order-history-item p {
+.notification-item p {
   margin: 0;
   color: #555;
   font-size: 14px;
 }
 
-.notification-item span,
-.order-history-item span {
+.notification-item span {
   font-size: 12px;
   color: #999;
+}
+
+/* Profile dropdown */
+.profile-info {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 10px;
+  display: none;
+}
+
+.profile-info:hover .profile-dropdown {
+  display: block;
 }
 
 /* Responsive Design */
@@ -213,14 +230,6 @@
 @media (max-width: 750px) {
   .navbar-menu {
     display: none;
-  }
-}
-
-@media (max-width: 750px) {
-  .navbar-menu {
-    display: block;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
   }
 
   .navbar-menu.show {
