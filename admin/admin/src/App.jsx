@@ -19,9 +19,10 @@ const App = () => {
         {isLoggedIn && <Sidebar />}
         <div className="content-container">
           <Routes>
-            <Route path="/" element={isLoggedIn ? <Navigate to="/admin" /> : <Login setIsLoggedIn={setIsLoggedIn} />} />
-            <Route path="/admin" element={isLoggedIn ? <AdminHome /> : <Navigate to="/" />} />
-            <Route path="/orders" element={isLoggedIn ? <Orders /> : <Navigate to="/" />} />
+            <Route path="/login" element={isLoggedIn ? <Navigate to="/" /> : <Login setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/" element={isLoggedIn ? <AdminHome /> : <Navigate to="/login" />} />
+            <Route path="/orders" element={isLoggedIn ? <Orders /> : <Navigate to="/login" />} />
+            <Route path="*" element={<Navigate to="/login" />} />
           </Routes>
         </div>
       </div>

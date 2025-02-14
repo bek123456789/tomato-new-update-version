@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../../src/styles.css';
+import './Login.css'; // Import the new CSS file
 
 const Login = ({ setIsLoggedIn }) => {
   const [username, setUsername] = useState('');
@@ -12,7 +12,7 @@ const Login = ({ setIsLoggedIn }) => {
     if (username === 'admin' && password === '1') {
       localStorage.setItem('isLoggedIn', 'true');
       setIsLoggedIn(true);
-      navigate('/admin'); // Redirect to the admin page after successful login
+      navigate('/'); // Redirect to the admin page after successful login
     } else {
       setError('Invalid username or password');
     }
